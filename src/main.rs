@@ -2,8 +2,8 @@ use anyhow::{anyhow, Result};
 use std::io::{stdin, stdout, BufWriter, Read, Write};
 use std::write;
 
-const FOOTNOTE_START: &str = "[{";
-const FOOTNOTE_END: &str = "}]";
+const FOOTNOTE_START: &str = "#!";
+const FOOTNOTE_END: &str = "!#";
 
 fn main() -> Result<()> {
     let mut content = String::new();
